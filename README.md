@@ -1,2 +1,3 @@
 # Azure-VM-Password-Management
-This repository is used to maintain Azure VM local admin passwords using an Azure Key vault
+This repository hosts a github workflow which is used to maintain Azure VM local admin passwords using an Azure Key vault.
+See my [blog post](here) for full details :smile:
