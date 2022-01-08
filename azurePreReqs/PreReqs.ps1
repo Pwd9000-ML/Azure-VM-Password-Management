@@ -26,7 +26,7 @@ az ad sp create-for-rbac --name $appId `
     --scopes /subscriptions/$subscriptionId/resourceGroups/$resourceGroup/providers/Microsoft.KeyVault/vaults/$keyVaultName `
     --sdk-auth
 
-# Assign aditional RBAC role to Service Principal Subscription to manage Virtual machines 
+# Assign additional RBAC role to Service Principal Subscription to manage Virtual machines 
 az ad sp list --display-name $appId --query [].appId -o tsv | ForEach-Object {
     az role assignment create --assignee "$_" `
         --role "Virtual Machine Contributor" `
